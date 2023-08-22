@@ -1,0 +1,18 @@
+.images-gallery {
+  // height: 20rem;
+  display: flex;
+  align-items: center;
+
+  * {
+    overflow: hidden;
+  }
+
+  .image-item {
+    height: 17rem;
+    width: auto;
+    display: block;
+    transition: all 0.5s ease-in-out;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+}

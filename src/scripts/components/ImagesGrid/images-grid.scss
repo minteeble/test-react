@@ -1,0 +1,39 @@
+.images-grid {
+  // width: 30rem;
+  margin: 2rem;
+
+  $image-size: 10rem;
+  .images-grid-content {
+    &.type-standard {
+      margin: 20px auto;
+      width: $image-size * 2 + ($image-size/10);
+      height: $image-size * 2 + ($image-size/10);
+
+      display: grid;
+      grid-template-columns: $image-size $image-size;
+      grid-row: auto auto;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+
+      .images-grid-item {
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+
+        &:hover {
+          scale: 0.9;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    // width: 20rem;
+    margin: 1.5rem 0.3rem;
+  }
+}
