@@ -1,5 +1,5 @@
 {
-  "homepage": "https://minteeble.github.io/test-react",
+  "homepage": "/test-react/",
   "name": "@hashlips-lab/nft-erc721-collection-dapp",
   "version": "2.1.0",
   "devDependencies": {
