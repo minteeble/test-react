@@ -33,29 +33,29 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-      <header>
- <Navbar
-          StartTransparent
-          Logo="#"
-          Pages={[
-            {
-              To: "/#home",
-              Text: "Home",
-            },
-          ]}
-          Socials={socials}
-        />
-      </header>
-       <main>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-        </Routes>
-               </main>
+        <header>
+          <Navbar
+            StartTransparent
+            Logo="#"
+            Pages={[
+              {
+                To: "/#home",
+                Text: "Home",
+              },
+            ]}
+            Socials={socials}
+          />
+        </header>
+        <main>
+          Helo
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+          </Routes>
+        </main>
 
         <Footer Socials={socials} Links={[]} />
       </BrowserRouter>
     </>
-    
   );
 };
 
