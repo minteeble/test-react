@@ -1,4 +1,5 @@
 {
+  "homepage": "https://minteeble.github.io/test-react",
   "name": "@hashlips-lab/nft-erc721-collection-dapp",
   "version": "2.1.0",
   "devDependencies": {
@@ -19,6 +20,7 @@
     "core-js": "^3.0.0",
     "ethers": "^5.5.3",
     "file-loader": "^6.0.0",
+    "gh-pages": "^6.0.0",
     "hardhat-typechain": "^0.3.5",
     "keccak256": "^1.0.6",
     "merkletreejs": "^0.2.27",
@@ -41,7 +43,8 @@
     "dev-server": "encore dev-server",
     "dev": "encore dev",
     "watch": "encore dev --watch",
-    "build": "encore production --progress"
+    "build": "encore production --progress",
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "@crossmint/client-sdk-react-ui": "^0.2.0",
