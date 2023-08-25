@@ -28,13 +28,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
+      - name: Installing deps
+        run: yarn install --force
+
+      - name: Webpack build
+        uses: yarn build
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./public
           destination: ./_site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
