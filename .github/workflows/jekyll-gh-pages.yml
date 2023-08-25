@@ -36,7 +36,7 @@ jobs:
         run: yarn install --force
 
       - name: Webpack build
-        uses: yarn build
+        run: yarn build
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
